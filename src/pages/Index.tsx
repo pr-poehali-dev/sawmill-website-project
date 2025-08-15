@@ -59,13 +59,35 @@ const Index = () => {
 
   if (!isLoggedIn) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-forest-light to-forest-dark">
+      <div className="min-h-screen bg-gradient-to-br from-forest-light to-forest-dark relative overflow-hidden">
+        {/* Forest Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 text-forest-dark/30">
+            <Icon name="TreePine" size={80} />
+          </div>
+          <div className="absolute top-32 right-20 text-forest-dark/20">
+            <Icon name="TreePine" size={60} />
+          </div>
+          <div className="absolute bottom-40 left-1/4 text-forest-dark/25">
+            <Icon name="TreePine" size={100} />
+          </div>
+          <div className="absolute bottom-20 right-1/3 text-forest-dark/20">
+            <Icon name="TreePine" size={70} />
+          </div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-forest-dark/15">
+            <Icon name="TreePine" size={120} />
+          </div>
+          {/* Floating particles */}
+          <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-forest-light/30 rounded-full animate-bounce" style={{animationDelay: '0s'}}></div>
+          <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-accent/40 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
+          <div className="absolute top-1/2 left-1/5 w-3 h-3 bg-wood-light/20 rounded-full animate-bounce" style={{animationDelay: '2s'}}></div>
+        </div>
         <div className="container mx-auto px-4 py-8">
           {/* Header */}
           <header className="text-center mb-12 animate-fade-in">
             <div className="flex items-center justify-center mb-6">
               <Icon name="TreePine" size={48} className="text-white mr-4" />
-              <h1 className="text-5xl font-heading font-bold text-white">ЛесПром</h1>
+              <h1 className="text-5xl font-heading font-bold text-white">Лесной Оазис</h1>
             </div>
             <p className="text-xl text-forest-light max-w-2xl mx-auto">
               Качественные пиломатериалы для строительства и отделки
@@ -141,13 +163,28 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-forest-light/20 to-accent/20">
+    <div className="min-h-screen bg-gradient-to-br from-forest-light/20 to-accent/20 relative overflow-hidden">
+      {/* Subtle forest background for logged in state */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-5 right-10 text-wood/30">
+          <Icon name="Trees" size={100} />
+        </div>
+        <div className="absolute bottom-10 left-5 text-wood/20">
+          <Icon name="TreePine" size={80} />
+        </div>
+        <div className="absolute top-1/3 left-1/4 text-forest/20">
+          <Icon name="Leaf" size={60} />
+        </div>
+        <div className="absolute bottom-1/3 right-1/3 text-forest/15">
+          <Icon name="TreePine" size={90} />
+        </div>
+      </div>
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <header className="flex items-center justify-between mb-8 animate-fade-in">
           <div className="flex items-center">
             <Icon name="TreePine" size={40} className="text-primary mr-3" />
-            <h1 className="text-3xl font-heading font-bold text-wood-dark">ЛесПром</h1>
+            <h1 className="text-3xl font-heading font-bold text-wood-dark">Лесной Оазис</h1>
           </div>
           <div className="flex items-center space-x-4">
             <Badge variant="secondary" className="bg-forest text-white">
