@@ -105,7 +105,7 @@ const Index = () => {
               <h2 className="text-3xl font-heading font-bold text-white mb-4">
                 Добро пожаловать в мир качественных пиломатериалов
               </h2>
-              <p className="text-forest-light mb-8">
+              <p className="mb-8 text-[#ffffff] text-xl">
                 Более 15 лет опыта в производстве и продаже строительных материалов из дерева
               </p>
             </div>
