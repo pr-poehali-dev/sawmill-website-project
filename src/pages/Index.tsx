@@ -236,11 +236,10 @@ const Index = () => {
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300 rounded-none"
                   />
-                  <Badge className="absolute top-3 right-3 bg-forest text-white">
-                    {product.price} ₽
-                  </Badge>
+                  <Badge className="absolute top-3 right-3 bg-forest text-white">3 500р.
+</Badge>
                 </div>
               </CardHeader>
               <CardContent className="p-4">
