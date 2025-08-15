@@ -80,14 +80,12 @@ const Index = () => {
           {/* Header */}
           <header className="text-center mb-12 animate-fade-in relative">
             {/* Background trees behind text */}
-            <div className="absolute inset-0 flex items-center justify-center opacity-5">
-              <Icon name="TreePine" size={200} className="text-white mr-8" />
+            <div className="absolute inset-0 flex items-center justify-center opacity-15">
               <Icon name="TreePine" size={160} className="text-white" />
               <Icon name="TreePine" size={180} className="text-white ml-8" />
             </div>
             <div className="relative z-10">
               <div className="flex items-center justify-center mb-6">
-                <Icon name="TreePine" size={48} className="text-white mr-4" />
                 <h1 className="text-5xl font-heading font-bold text-white">Лесной Оазис</h1>
               </div>
               <p className="text-xl text-forest-light max-w-2xl mx-auto">
